@@ -1,0 +1,142 @@
+
+#logodiv img { width:auto; height:auto; }
+
+#menu li { font-weight:normal; }
+
+#menu #prest:hover { color:green; }
+
+#menu #prest:hover img { transform:rotate(180deg); }
+
+
+html, body { height:100%; }
+
+#body { display:flex; flex-direction:column; margin:0em 3.7em 7em 3.7em; color:white; }
+
+nav { background:#1D1D1B; height:82px; }
+
+#title { margin:1em 0em 2.2em 5.1em; }
+
+#title span { margin-right:6px; }
+
+/* padding:10px 60px 0px 60px;  */
+
+
+
+
+
+#bigscreen { display:flex; background: linear-gradient(0deg, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
+    url(../images/accountant.png) center; background-size:100% 100%; height:34em; display:none;
+    align-items:center; flex-direction:column; padding:0em 20px; position:relative; }
+
+#bigscreen .div1 { display:flex; justify-content:space-between; width:100%; padding:25px 34px;
+    box-sizing:border-box; }
+
+#bigscreen .div1 img { width:30px; height:35px; }
+
+
+#bigscreen .div2 img { width:20em; height:18em; }
+
+#bigscreen .div2 h1 { text-align:center; color:white; margin-top:60px; }
+
+
+
+#controls { position:fixed; width:92%; bottom:10px; color:white; }
+
+#controls div { display:flex; justify-content:space-between; align-items:center; }
+
+#controls div:nth-child(1) img { margin:0px 5px; max-height:24px; }
+
+
+#controls div:nth-child(2) a { display:inline-flex; align-items:center; color:white; margin-right:10px; }
+
+#controls div:nth-child(2) img { height:8px; margin:0px 5px; }
+
+#controls div:nth-child(2) #smallscreen { height:18px; margin:5px; }
+
+
+
+
+
+
+article { display:flex; }
+
+article img { width:27em; }
+
+
+article .artdiv { display:flex; flex-direction:column; margin-left:2em; position:relative; flex:1; }
+
+.artstart button { border:0px; font-size:15px; font-weight:50px; padding:2px 4px; border-radius:2px;
+    font-weight:bold; }
+
+.artdiv h1 { font-size:22px; margin-top:25px; }
+
+.artstart #wht { background:white; margin-right:10px; }
+
+.artstart #ylw { background:#ffff26; }
+
+
+.artdiv p { width:42em; line-height:30px; font-size:15px; margin:10px 0em; }
+
+.artdiv p span { display:inline-block; list-style:circle; color:#828382; }
+
+
+.artend { display:flex; justify-content:space-between; }
+
+.artend .sing { background:rgba(0,0,0,0); border-radius:4px; width:140px; height:46px; color:white;
+    text-transform:uppercase; font-size:15px; font-weight:bold; border:1px solid #a0a19f; display:flex;
+    align-items:center; justify-content:center; }
+
+.artend .sing:hover { background:white; color:black; }
+
+
+.artend #singing { border-color:#ffff26; color:#ffff26; }
+
+.artend #singing:hover { background:#ffff26; color:black; }
+
+
+
+.artend div { display:flex; align-items:center; }
+
+.artend div img { margin:0em 2px; width:2em; height:2em; }
+
+
+#artline { position:absolute; bottom:0; left:0; width:100%; }
+
+
+
+#playlist { margin-top:42px; font-size:32px; height:1.8em; border-bottom:2px solid #a0a19f; }
+
+
+
+
+a { cursor:pointer; }
+
+aside { background:#292A2A; padding:15px; padding-right:40px; display:flex; margin:2em 0em;
+    justify-content:space-between; align-items:center; color:white; }
+
+
+aside .secimgbox { display:flex; align-items:center; }
+
+.secimgbox img { width:100px; height:90px; margin-right:10px; }
+
+.secimgbox h2 { font-size:16px; font-weight:600; }
+
+.secimgbox h2 span { font-weight:normal; }
+
+.secimgbox p { font-size:14px; opacity:0.8; letter-spacing:0.5px; }
+
+.secimgbox p span { opacity:0.5; list-style:circle; }
+
+.sectoolsbox img { margin:0em 2px; width:2em; height:2em; }
+
+
+
+#playing { position:fixed; bottom:0; left:0; width:100%; background:#1c1c1a;
+    padding:1em; padding-right:2em; }
+
+#playing div { display:flex; }
+
+#playing #audbar { width:100%; }
+
+#playing .playbox1 img { width:60px; height:55px; margin-right:1em; }
+

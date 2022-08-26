@@ -1,0 +1,192 @@
+<!DOCTYTE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="shortcut icon" type="image/png" href="./images/tools/logo.png"/>
+        <title id="pagetitle"> HEMLE </title>
+        <link rel="stylesheet" href="./styles/navv.css"/>
+        <link rel="stylesheet" href="./styles/pag.css"/>
+    </head>
+
+    <body>
+<script>
+    a = "accountant";
+    var img = "";
+    song();
+    function song() {
+        img = "<img src='./images/" + a + ".png' alt='" + a + " image'/>";
+        a = (a == "accountant") ? "business" : "accountant";
+        console.log("a");
+    }
+</script>
+
+        <nav>
+            <div id="logodiv">
+                <img src="./images/tools/title.png" alt="logo image"/>
+            </div>
+            <ul id="menu">
+                <a href="./"> <li> Acceuil </li> </a>
+                <a href=""> <li id="prest"> Prestation <img src="./images/tools/fleche.png" alt=""/> </li> </a>
+                <a href=""> <li> Nos clients </li> </a>
+                <a href=""> <li> A propos </li> </a>
+            </ul>
+            <ul id="tools">
+                <li> <img id="search" src="./images/tools/search.png" alt="search image"/> </li>
+                <li> <img src="./images/tools/world.png" alt="world image"/> </li>
+                <li> <button> Se connecter </button> </li>
+            </ul>
+        </nav>
+
+        <p id="title">
+            <img src="./images/tools/home.png" alt="home icon"/>
+            <span> / Acceuil </span> / Playlist podcast
+        </p>
+
+        <div id="body">
+
+            <article>
+                <script> document.write(img); </script>
+                <div class="artdiv">
+                    <div class="artstart">
+                        <button id="wht"> travail </button>
+                        <button id="ylw"> Methodologie </button>
+                    </div>
+                    <h1> 1. Méthode Agile </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit tellus in ut
+                        elementum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit tellus 
+                    </p> <p>
+                        Nom Prénom - Youtube <span>10 Mai 2022</span>
+                    </p>
+                    <div class="artend">
+                        <button class="sing" id="sing">Ecouter
+                            <img src="./images/tools/volume.png" alt="listen icon" style="font-size:1px;"/>
+                        </button> <div>
+                            <img onclick="bigscreen()" style="cursor:pointer;"
+                                src="./images/tools/screen.png" alt="big screen icon"/>
+                            <img src="./images/tools/clock.png" alt="clock icon"/>
+                            <img src="./images/tools/share.png" alt="share icon"/>
+                        </div>
+                    </div>
+                    <img id="artline" src="./images/tools/line.png" alt="line image"/>
+                </div>
+            </article>
+
+            <section>
+                <h1 id="playlist">Playlist</h1>
+
+                <a onclick="song()"> <aside>
+                    <div class="secimgbox">
+                        <img src="./images/accountant.png" alt="accounting image"/>
+                        <div>
+                            <h2><span>1</span> Methode Agile</h2>
+                            <p>Nom Prenom - Youtube <span>10 Mai 2022</span></p>
+                        </div>
+                    </div> <div class="sectoolsbox">
+                        <img src="./images/tools/clock.png" alt="clock icon"/>
+                        <img src="./images/tools/share.png" alt="share icon"/>
+                    </div>
+                </aside> </a>
+
+                <a onclick="song()"> <aside>
+                    <div class="secimgbox">
+                        <img src="./images/business.png" alt="business icon"/>
+                        <div>
+                            <h2><span>2</span> Business</h2>
+                            <p>Nom Prenom - Youtube <span>19 Juin 2022</span></p>
+                        </div>
+                    </div> <div class="sectoolsbox">
+                        <img src="./images/tools/clock.png" alt="clock icon"/>
+                        <img src="./images/tools/share.png" alt="share icon"/>
+                    </div>
+                </aside> </a>
+
+            </section>
+
+        </div>
+
+        <!-- <aside id="playing">
+            <img id="audbar" src="./images/tools/audio.png" slt=""/>
+            <div class="playbox1">
+                <img src="./images/business.png" alt=""/>
+                <img src="./images/business.png" alt=""/>
+                <div>
+                    <h2><span>2</span> Business</h2>
+                    <p>Nom Prenom - Youtube <span>19 Juin 2022</span></p>
+                </div>
+            </div> <div class="playbox2">
+                <img src="./images/tools/clock.png" alt=""/>
+                <img src="./images/tools/share.png" alt=""/>
+            </div>
+        </aside> -->
+
+
+
+        <div id="bigscreen">
+            <div class="div1">
+                <a onclick="bigscreen()"> <img src="./images/tools/back.png" alt="back icon"/> </a>
+                <img src="./images/tools/share.png" alt="share icon"/>
+            </div>
+            <div class="div2">
+                <img src="./images/accountant.png" alt="accounting icon"/>
+                <h1> Business </h1>
+            </div>
+            <div id="controls">
+                <p>5:26 / 8:00</p>
+                <img src="./images/tools/audio" style="width:100%;" alt="audiobar image"/>
+                <img src="./images/tools/redaudiobar" alt="audiobar image" style="margin-top:-6px; width:60%;
+                    margin-bottom:10px;"/>
+                <div>
+                    <div>
+                        <img src="./images/tools/play.png" alt="play icon"/>
+                        <img src="./images/tools/volume.png" alt="volume icon"/>
+                        <img src="./images/tools/clock.png" alt="clock icon"/>
+                        <img src="./images/tools/1x.png" alt="1x image"/>
+                    </div> <div>
+                        <a>&#60;<&#62; Precedent</a>
+                        <a>Suivant>></a>
+                        <a onclick="bigscreen()"> <img src="./images/tools/smallscreen.png"
+                            id="smallscreen" alt="smallscreen image"/> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+
+    </body>
+
+</html>
+
+<script>
+    let ttl = document.getElementById("title");
+    let bdy = document.getElementById("body");
+    //let ply = document.getElementById("playing");
+    let big = document.getElementById("bigscreen");
+        
+    function bigscreen() {
+        if (ttl.style.display != "none") {
+            ttl.style.display = "none";
+            bdy.style.display = "none";
+            //ply.style.display = "none";
+            big.style.display = "flex";
+        } else {
+            ttl.style.display = "flex";
+            bdy.style.display = "flex";
+            //ply.style.display = "flex";
+            big.style.display = "none";
+        }
+    }
+
+    let sng = document.getElementById("sing");
+    sng.addEventListener("click", function() {
+       let val = sng.innerText;
+        sng.id = "singing";
+        sng.innerText = "ECOUTER";
+        sngg = document.getElementById("singing");
+        sngg.innerText = (val == "PAUSE") ? "REPRENDRE" : "PAUSE";
+    });
+    
+</script>
